@@ -1,6 +1,6 @@
 # hugface
 
-设置变量UUID即可使用
+设置变量UUID即可使用，代码建议混淆使用
 
 节点最好套cf，否则速度太慢，可以使用worker.js套cf
 
