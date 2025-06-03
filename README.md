@@ -6,4 +6,4 @@
 
 套了cf后配置参考下面
 
-vless://82da0bb4-c27f-4e4b-89aa-16c7680f089e@bestcf.030101.xyz:443?path=%2F&security=tls&encryption=none&host=music.koyeb.nyc.mn&type=ws&sni=music.koyeb.nyc.mn#US.hf.space
+vless://53fa8faf-ba4b-4322-9c69-a3e5b1555049e@bestcf.030101.xyz:443?path=%2F&security=tls&encryption=none&host=cf.nyc.mn&type=ws&sni=cf.nyc.mn#US.hf.space
