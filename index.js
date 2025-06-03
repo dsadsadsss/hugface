@@ -28,7 +28,7 @@ const server = http.createServer(async (req, res) => {
     // 处理 UUID 路径请求，返回配置信息
     if (url.pathname === `/${userID}`) {
       const host = req.headers.host;
-      const vlessConfig = `vless://${userID}@${host}?encryption=none&security=none&type=ws&host=${host}&path=/#${host}`;
+      const vlessConfig = `vless://${userID}@${host}:443?encryption=none&security=none&type=ws&host=${host}&path=/#${host}`;
       res.writeHead(200, { 'Content-Type': 'text/plain;charset=utf-8' });
       res.end(vlessConfig);
       return;
@@ -308,7 +308,7 @@ server.listen(PORT, () => {
   console.log(`用户ID: ${userID}`);
   console.log(`健康检查: http://localhost:${PORT}/health`);
   if (userID) {
-    console.log(`配置链接: http://localhost:${PORT}/${userID}`);
+    console.log(`订阅链接: http://localhost:${PORT}/${userID}`);
   }
 });
 
