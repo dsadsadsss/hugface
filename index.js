@@ -304,11 +304,11 @@ async function handleUDPOutBound(webSocket, vlessResponseHeader) {
 
 // 启动服务器
 server.listen(PORT, () => {
-  console.log(`WebSocket服务器运行在端口 ${PORT}`);
-  console.log(`用户ID: ${userID}`);
-  console.log(`健康检查: http://localhost:${PORT}/health`);
+  console.log(`服务器运行在端口 ${PORT}`);
+  console.log(`UUID: ${userID}`);
+  console.log(`健康检查: /health`);
   if (userID) {
-    console.log(`订阅链接: http://localhost:${PORT}/${userID}`);
+    console.log(`订阅链接: /${userID}`);
   }
 });
 
